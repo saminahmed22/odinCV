@@ -1,0 +1,303 @@
+@font-face {
+  font-family: DMSerif;
+  src: url(./assets/DM_Serif_Text/DMSerifText-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/Roboto.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+  width: 5px;
+  margin: 0 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1f1f1f;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+
+  font-family: Roboto;
+
+  user-select: none;
+  outline: none;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+
+  border: none;
+  cursor: pointer;
+}
+
+.app {
+  display: flex;
+  background-color: #080808;
+}
+
+/* ############################################ */
+/* Form */
+
+.DelteED {
+  margin: 20px;
+}
+
+input {
+  height: 25px;
+  width: 200px;
+  padding-left: 5px;
+}
+
+.formDiv {
+  height: 100%;
+  width: 50%;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+label {
+  color: white;
+  font-size: 1.5rem;
+}
+
+legend {
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+fieldset {
+  border: none;
+  margin: 30px 0 20px 20px;
+}
+
+.InputContainer {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  width: 600px;
+
+  margin: 20px 0 20px 50px;
+}
+
+.addInfoFieldBtn {
+  background-color: lightblue;
+  height: 40px;
+  width: 150px;
+}
+
+.AddInputField {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.AddInputField:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.addInputDeleteBtn {
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  margin: 10px;
+}
+.addInputDeleteBtn:hover svg {
+  fill: crimson;
+}
+.addInputDeleteBtn:active svg {
+  fill: red;
+}
+
+.AddInputContainer {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  width: 600px;
+
+  margin: 0px 0 0px 50px;
+}
+
+.contactContiner img {
+  height: 20px;
+}
+
+.contactContainer {
+  display: flex;
+  gap: 10px;
+}
+
+#InputContribution {
+  height: 75px;
+  width: 200px;
+  padding: 4px;
+  resize: vertical;
+}
+
+.addDetailsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.InstitutionContainer,
+.workFieldContainer {
+  width: 700px;
+}
+
+.InstitutionField,
+.workFieldDiv {
+  outline: 1px solid white;
+  display: flex;
+  width: fit-content;
+  margin: 30px;
+  border-radius: 10px;
+}
+/* ############################################ */
+
+/* ############################################ */
+/* preview */
+
+.previewDivContainer {
+  height: 100%;
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.printBtnDiv {
+  display: flex;
+  justify-content: flex-end;
+
+  margin: 20px;
+}
+
+.previewDiv {
+  height: 90%;
+  width: 70%;
+
+  background-color: #fff7de;
+
+  align-self: center;
+  margin: 0 0 25px 0;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.previewContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.previewContainer p {
+  line-height: 50%;
+}
+.previewContact {
+  margin: 15px 0 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.previewEducation,
+.previewWork {
+  margin: 15px 0 10px 20px;
+}
+.previewEduTitle {
+  font-weight: 400;
+}
+
+.previewEduContainer,
+.previewWorkContainer {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 30px 20px;
+}
+.previewDateContaner {
+  display: flex;
+
+  width: 200px;
+  align-items: flex-start;
+  gap: 5px;
+  font-weight: 500;
+}
+.previewEduDetails,
+.previewWorkDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.previewContainerDegree,
+.previewContainerPosition {
+  font-size: 1.5rem;
+  line-height: 80%;
+  margin-bottom: 5px;
+}
+.previewContainerInstitution {
+  font-weight: 300;
+}
+
+.previewContainerCompany {
+  margin: 5px 0;
+  font-weight: 300;
+}
+
+.previewContainerContribution {
+  font-weight: 400;
+  width: 450px;
+}
+
+/* ############################################ */
+
+/* ############################################ */
+/* Print */
+
+@media print {
+  body {
+    margin: 0;
+  }
+  body * {
+    visibility: hidden;
+  }
+
+  #printable,
+  #printable * {
+    visibility: visible;
+  }
+  #printable {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+/* ############################################ */
