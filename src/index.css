@@ -1,10 +1,10 @@
 @font-face {
   font-family: DMSerif;
-  src: url(./assets/DM_Serif_Text/DMSerifText-Regular.ttf);
+  src: url(/assets/fonts/DMSerif.ttf);
 }
 @font-face {
   font-family: Roboto;
-  src: url(./assets/fonts/Roboto.ttf);
+  src: url(/assets/fonts/Roboto.ttf);
 }
 
 * {
@@ -211,6 +211,8 @@ fieldset {
 
   overflow-x: hidden;
   overflow-y: auto;
+
+  font-family: DMSerif;
 }
 
 .previewContainer {
