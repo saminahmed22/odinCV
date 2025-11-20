@@ -19,7 +19,7 @@ export default function Preview({ details }) {
           }`}</h1>
           <div className="email contactContiner ">
             <div className="previewContainer">
-              <img src="../src/assets/icons/email.svg" alt="" />
+              <img src="/assets/icons/email.svg" alt="" />
               <p>
                 {details.personalInformation.email || "examplesmith@gmail.com"}
               </p>
@@ -27,13 +27,13 @@ export default function Preview({ details }) {
           </div>
           <div className="phone contactContiner ">
             <div className="previewContainer">
-              <img src="../src/assets/icons/phone.svg" alt="" />
+              <img src="/assets/icons/phone.svg" alt="" />
               <p>{details.personalInformation.phoneNumber || "31415-68735"}</p>
             </div>
           </div>
           <div className="address contactContiner ">
             <div className="previewContainer">
-              <img src="../src/assets/icons/address.svg" alt="" />
+              <img src="/assets/icons/address.svg" alt="" />
               <p>
                 {details.personalInformation.address ||
                   "4/A, Example street, somewhere"}
@@ -42,7 +42,7 @@ export default function Preview({ details }) {
           </div>
           <div className="Website contactContiner ">
             <div className="previewContainer">
-              <img src="../src/assets/icons/web.svg" alt="" />
+              <img src="/assets/icons/web.svg" alt="" />
               <p>
                 <a
                   href={
